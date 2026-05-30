@@ -35,10 +35,27 @@ body{
     
 .dropdown{
     position:relative;
+    display:inline-block;
 }
-    
+
 .dropdown-menu{
     display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#F5EDE5;
+    padding:10px;
+    border-radius:16px;
+    min-width:170px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    z-index:999;
+}
+
+.dropdown-menu a{
+    display:block;
+    margin:6px 0;
+    padding:10px 14px;
+    white-space:nowrap;
 }
 
 .dropdown:hover .dropdown-menu{
