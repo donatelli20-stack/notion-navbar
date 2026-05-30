@@ -32,6 +32,19 @@ body{
 .navbar a:hover{
     transform:translateY(-2px);
 }
+    
+.dropdown{
+    position:relative;
+}
+    
+.dropdown-menu{
+    display:none;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
 </style>
 </head>
 
@@ -39,7 +52,21 @@ body{
 
 <div class="navbar">
     <a href="#">🏠 Home</a>
+   <div class="dropdown">
+
     <a href="#">📅 Planner</a>
+
+    <div class="dropdown-menu">
+
+        <a href="#">Weekly Planner</a>
+
+        <a href="#">Calendar</a>
+
+        <a href="#">Tasks</a>
+
+    </div>
+
+</div>
     <a href="#">🎯 Goals</a>
     <a href="#">💰 Finance</a>
     <a href="#">📝 Journal</a>
